@@ -1,0 +1,48 @@
+Source: clickhouse-cpp
+Priority: optional
+Maintainer: Kulakov Kirill <kulakov@ultrabook.cs.prv>
+Build-Depends: debhelper (>= 10), cmake
+Standards-Version: 4.1.2
+Section: libs
+Homepage: https://github.com/artpaul/clickhouse-cpp
+#Vcs-Git: https://anonscm.debian.org/git/collab-maint/clickhouse-cpp.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/clickhouse-cpp.git
+
+Package: libclickhouse-cpp-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libclickhouse-cpp1 (= ${binary:Version}), ${misc:Depends}
+Description: ClickHouse C++ client (developer files)
+ C++ client for Yandex ClickHouse
+ Supported data types
+    Array(T)
+    Date
+    DateTime
+    Enum8, Enum16
+    FixedString(N)
+    Float32, Float64
+    Nullable(T)
+    String
+    Tuple
+    UInt8, UInt16, UInt32, UInt64, Int8, Int16, Int32, Int64
+
+
+Package: libclickhouse-cpp1
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: ClickHouse C++ client
+ C++ client for Yandex ClickHouse
+ Supported data types
+    Array(T)
+    Date
+    DateTime
+    Enum8, Enum16
+    FixedString(N)
+    Float32, Float64
+    Nullable(T)
+    String
+    Tuple
+    UInt8, UInt16, UInt32, UInt64, Int8, Int16, Int32, Int64
+

@@ -1,0 +1,11 @@
+prefix=@DEST_DIR@
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include/clickhouse-cpp
+
+Name: clickhouse-cpp
+Description: C++ client for Yandex ClickHouse
+Version: 1.0
+
+Libs: -L${libdir} -lclickhouse-cpp-lib
+Cflags: -I${includedir}

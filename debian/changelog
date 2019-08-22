@@ -1,0 +1,5 @@
+clickhouse-cpp (1.0.0-1) unstable; urgency=medium
+
+  * Initial release
+
+ -- Kulakov Kirill <kulakov@ultrabook.cs.prv>  Thu, 22 Aug 2019 15:23:24 +0300
